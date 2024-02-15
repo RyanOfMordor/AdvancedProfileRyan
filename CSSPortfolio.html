@@ -5,18 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Developer Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="Assets/styles.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
 
     <header class="header">
-        <a href="#" class="logo">Ryan Lee</a>
+        <div class="logo">Ryan Lee</div>
 
         <nav class="navbar">
-        <a href="#">About</a>    
-        <a href="#">Projects</a>
-        <a href="#">Contact</a>
+        <a href="#home-content">About</a>    
+        <a href="#projects">Projects</a>
+        <a href="#social-media">Contact</a>
+
     </nav>
     </header>
 
@@ -25,18 +26,27 @@
             <h1>Hello, My name is Ryan Lee</h1>
             <h3>I'm working to become a Web Developer.</h3>
             <h3> I'm currently attending a bootcamp through OSU.</h3>
-        
         </div>
-    </section>
 
-    <footer>
+        <section id="projects">
+            <div class="column"><a href="https://ryanofmordor.github.io/Code-refactor-RyanLee/ "><img class="projects1" src="Assets/digital-marketing-meeting.jpg" alt="Most Recent Work"></a></div>
+            <div class="column"><a href="https://github.com/RyanOfMordor"><img class="projects2" src="Assets/github.png" alt="Github Link"></a></div>
+        </section>
+        
+        </section>
+
+        <aside>
+            <img class="portfolio-image" src="Assets/DaddyandLogan.jpg" alt="Portfolio Image">
+        </aside>
+       
+
+    <footer id="social-media">
         <!--- Icons and class usage based off of https://boxicons.com/usage-->
-        <section class="home-sci">
-            <a href="#"><i class='bx bxl-facebook'></i></a>
-            <a href="#"><i class='bx bxl-linkedin'></i></a> 
+        <section class="contact-buttons">
+            <a href="https://www.facebook.com/profile.php?id=100060769644364"><i class='bx bxl-facebook'></i></a>
+            <a href="https://www.linkedin.com/in/ryanofmordor"><i class='bx bxl-linkedin'></i></a> 
         </section>
     </footer>
-    <!--- change to practice pushes -->
 
 </body>
 </html>

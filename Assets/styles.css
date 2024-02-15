@@ -1,0 +1,149 @@
+/* Used https://youtu.be/RroDdybvu5s?si=sPesd49h3lrPxa7j as a reference for some elements in below page */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Times New Roman', Times, serif;
+
+}
+
+body {
+  background: #081b29;
+  color: antiquewhite;
+
+}
+
+.header {
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+
+}
+
+.logo {
+  font-size: 30px;
+  color: antiquewhite;
+  text-decoration: none;
+  font-weight: 600;
+
+}
+
+.navbar a {
+  font-size: 18px;
+  color: antiquewhite;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 40px;
+  transition: .2s;
+
+}
+
+.navbar a:hover {
+  color: aqua;
+
+}
+
+.home {
+  height: 100vh;
+  width: 70%;
+  display: inline-block;
+  align-items: center;
+  padding: 0 10%;
+  float: left;
+  margin-top: 10%;
+}
+
+.home-content h1 {
+  font-size: 60px;
+  font-weight: 700;
+
+}
+
+.home-content h3 {
+  font: size 50px; 
+  font-weight: 500;
+}
+
+.portfolio-image {
+  width: 300px;
+  height: auto;
+  border-radius: 100px 0 100px 0;
+  margin-top: 10%;
+  display: float;
+}
+
+.column{
+  float: left;
+  padding: 50px;
+  width: 50%;
+  margin-top: 30%;
+}
+
+.projects1 {
+  width:100%;
+  height: auto;
+  display: inline-block;
+}
+
+.projects2 {
+  width:100%;
+  height: auto;
+  display: inline-block;
+  
+  
+}
+
+.contact-buttons {
+  position: absolute;
+  bottom: 0;
+  width: 170px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+/* content for Facebook/LinkedIn Icons from https://boxicons.com/ */
+.contact-buttons a {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: 2px solid #00abf0;
+  border-radius: 50%;
+  font-size: 20px;
+  color: #00abf0;
+  text-decoration: none;
+  z-index: 1;
+  overflow: hidden;
+  transition: .5s;
+  
+  
+}
+
+.contact-buttons a:hover {
+  color: #081b29;
+}
+
+.contact-buttons a::before {
+  display: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #00abf0;
+  z-index: -1;
+  transition: .5s;
+}
+
+.contact-buttons a:hover::before {
+  width: 100%;
+}
